@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+<title>Jade Delight</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script>
+        const orderInfoValue = localStorage.getItem("orderInfo");
+        $(document).ready(function()
+        {
+            $("#order").html(orderInfoValue);
+        });
+    </script>
+    
+    <h1>Your Order:</h1>
+    <div id="order">
+        &nbsp
+    </div>
+</body>
+</html>
+    

@@ -1,0 +1,67 @@
+DUE: March 17th (next Thursday)
+
+CURRENT ISSUES:
+- $ signs for totals and tax need to be aligned
+
+NOTES: 
+- cannot change HTML or Javascript code already there
+- may change CSS
+
+TO DO: 
+- When user selects quantity
+DONE    1) amount added to total cost box
+    - get qty from drop down select input
+    - total cost = qty * price
+    - have to put total cost into form input type=text w name "cost" box
+    
+DONE    2) subtotal, tax, and total updated 
+    - have variables to hold all these
+    - when qty selected, add that total cost to the subtotal (but add 
+    everything again when a new quantity is selected each time so that 
+    it is updated)
+    - same thing w tax, calculate tax using Subtotal
+    - add tax and subtotal to get total
+
+    
+DONE - Hide street and city fields unless delivery selected
+    - display: none if pickup selected
+    - display: block if delivery selected
+
+DONE - Align labels and input boxes with CSS
+
+- When user clicks submit 
+DONE    1) verify that last name and phone number entered 
+        - verify phone number has either 7 or 10 numbers
+            - other characters do not matter, only numbers
+            - get function that returns phone number with only numbers left
+            - check if length of string is 7 or 10
+DONE    2) if pickup
+        - calculate the actual time as 15 min + order time
+        - get date and get time and then add 15 min
+DONE    3) if delivery
+        - calculate actual time as 30 min + order time
+        - hint: use date class
+        - verify street and city entered
+        - check if there is something in the boxes for those, check not 
+        empty string?
+DONE    4) verify at least one item ordered
+        - make sure subtotal not 0
+DONE    5) indicate validation issues to user
+        - pop up in alert maybe or put separate div at the bottom with 
+        issues
+DONE    6) if no validation issues
+        - display popup to thank for order 
+        - open new window/tab to display all order details 
+        - hint: create new window object 
+
+QUESTIONS:
+1) If you had an extra two weeks for this project, what features 
+would you add?
+I would want to add a section for notes or modifications for the items. 
+I think it would also be cool to add the ability to schedule a pickup order for a few 
+days in advance or for a specific time later in the day as well. 
+
+2) The thing I like least about Javascript is...?
+I don't like how hard it is to find mistakes in the code sometimes. A few times I wasn't 
+able to figure out why my code wasn't doing anything and it was just due to a simple spelling
+mistake or syntax error. 

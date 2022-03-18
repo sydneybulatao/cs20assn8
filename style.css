@@ -1,0 +1,54 @@
+@font-face{font-family: "Inspiration";
+src: url("Inspiration-Regular.ttf")}
+@font-face{font-family: "SortsMillGoudy";
+src: url("SortsMillGoudy-Regular.ttf")}
+body,html
+{
+    font-family: "SortsMillGoudy";
+}
+form, #order
+{
+    margin: 0px 70px; background-color: #edf5ef;
+    padding-top: 30px; padding-bottom: 30px;
+    padding-left: 25px; padding-right: 25px;
+}
+h1
+{
+    color: #a0b8a6; font-family: "Inspiration"; font-size: 80px;
+    text-align: center;
+}
+.userInfo input
+{
+    position: absolute; left: 200px;
+}
+.totalSection input
+{
+    position: absolute; left: 250px;
+}
+p label, th, h2
+{
+    color: #505c52;
+}
+td:nth-child(2), th:nth-child(2)
+{
+    position: absolute; left: 200px;
+}
+td:nth-child(3), th:nth-child(3)
+{
+    position: absolute; left: 400px;
+}
+td:nth-child(4), th:nth-child(4)
+{
+    position: absolute; left: 525px;
+}
+input[type=button]
+{
+    font-family: "SortsMillGoudy"; border: none; 
+    background-color: #a0b8a6; padding-top: 5px; padding-bottom: 5px;
+    padding-left: 10px; padding-right: 10px; font-size: 16px;
+    margin-top: 30px;
+}
+input[type=button]:hover
+{
+    background-color: #c1dec8;
+}
